@@ -1,1 +1,15 @@
-
+body {
+    background-color: transparent;
+}
+Encabezado {
+    background-color: #A49393;
+}
+Cuerpo {
+    background-color: #E8B4B8;
+}
+PiePagina {
+    background-color: #67595E;
+}
+Unico {
+    text-align: center;
+}
