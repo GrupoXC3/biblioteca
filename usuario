@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf_8">
+    <title>MY Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script>
+        function mostrarcontrasena() {
+            var x = document.getElementById("pass");
+            if (x.type == "password") {
+                x.type = "text";
+            } else {
+                x.type == "password";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card col-md-4 mx-auto mt-4">
+            <div class="card-title">
+                <img src="pngwing.com.png" width="120" height="120" alt="120" />
+            </div>
+            <div class="from-cotrol">
+
+                <form action="/data.php" method="GET">
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Ingrese su correo</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Ingrese su contrasena</label>
+                        <input type="password" class="form-control" id="pass">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                    <button type="button" class="btn btn-primary" onclick="mostrarcontrasena()">Mostrar</button>
+
+            </div>
+        </div>
+</body>
+</div>
+</body>
