@@ -1,15 +1,16 @@
 body {
-    background-color: transparent;
+    background-color: #FADCD9;
 }
-Encabezado {
+.Encabezado {
     background-color: #A49393;
 }
-Cuerpo {
+.Cuerpo {
     background-color: #E8B4B8;
 }
-PiePagina {
-    background-color: #67595E;
-}
-Unico {
+h1 {
     text-align: center;
+    font-size: 50px;
+}
+.PiePagina {
+    background-color: #67595E;
 }
