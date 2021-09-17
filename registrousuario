@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrousuario</title>
+    <link rel="stylesheet" type="text/css" href="css/registrousuario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script>
+        function mostrarcontrasena() {
+            var x = document.getElementById("pass");
+            if (x.type == "password") {
+                x.type = "text";
+            } else {
+                x.type == "password";
+            }
+        }
+    </script>
+</head>
+<section class="form-register">
+    <h4>Registro de usuario</h4>
+    <input class="controls" type=" text " name="nombres " id="nombres " placeholder="Ingrese su nombre ">
+    <input class="controls" type="text " name="apellidos " id="apellidos " placeholder="Ingrese apellido ">
+    <input class="controls" type="email " name="e-mail " id="email " placeholder="Ingrese su e-mail ">
+    <input class="controls" type="password" name="contrasena" id="pass" placeholder="Ingrese su contraseña ">
+
+    <p>La contraseña debe contener numeros y letras</p>
+
+    <button type="submit " class="registrar ">Registrar</button>
+    <button type="button " class="mostrar " onclick="mostrarcontrasena() ">Mostrar</button>
+    <p>
+        <a href="usuario.html">¿Ya tienes una cuenta?</a></p>
+
+</section>
+
+<body>
+
+</body>
+
+</html>
