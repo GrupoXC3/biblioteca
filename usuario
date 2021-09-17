@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf_8">
-    <title>LoginBibliotecaFilandia</title>
+    <title>MY Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script>
         function mostrarcontrasena() {
@@ -16,16 +16,26 @@
             }
         }
     </script>
+    <style>
+        div {
+            background-color: #A49393;
+        }
+    </style>
 
 </head>
 
 <body>
+
     <div class="container">
+
         <div class="card col-md-4 mx-auto mt-4">
+
             <div class="card-title">
+                <h4>Inicio de sesion</h4>
                 <img src="pngwing.com.png" width="120" height="120" alt="120" />
             </div>
             <div class="from-cotrol">
+
 
                 <form action="/data.php" method="GET">
 
@@ -36,7 +46,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Ingrese su contrasena</label>
-                        <input type="password" class="form-control" id="pass">
+                        <input type="password" class="form-control" id="pass" id="exampleCheck1">
                     </div>
 
                     <button type="submit" class="btn btn-primary">Confirmar</button>
@@ -44,6 +54,4 @@
 
             </div>
         </div>
-</body>
-</div>
 </body>
