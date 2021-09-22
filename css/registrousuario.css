@@ -7,7 +7,7 @@
 body {
     font-family: 'Arial';
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #67595E, #b67878, #67595E);
+    background: -webkit-linear-gradient(to right, #E8B4B8, #b67879, #a76363, #67595E);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #E8B4B8, #b67879, #a76363, #67595E);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
