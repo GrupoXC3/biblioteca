@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrousuario</title>
+    <link rel="stylesheet" type="text/css" href="css/registrousuario.css">
+
+
+</head>
+<section class="form">
+    <h4>Registro recuperación de contraseña</h4>
+    <div class="grupo2">
+        <input class="controls" type=" text " name="nombres " id="nombres " placeholder="Ingrese su nombre ">
+    </div>
+    <div class="grupo2">
+        <input class="controls" type="email " name="e-mail " id="email " placeholder="Ingrese su e-mail ">
+    </div>
+    <div class="grupo2">
+        <input type="password" id="Input" placeholder="Ingrese la nueva contraseña" required>
+        <img src="Show.png" width="20" height="20" alt="2" class="icon" id="Ojo">
+    </div>
+    <div class="grupo2">
+        <input type="password" id="Input" placeholder="Confirme la contraseña" required>
+    </div>
+
+
+    <button type="submit " class="registrar ">Cambiar contraseña</button>
+    </br>
+
+</section>
+<script>
+    var ojo = document.getElementById('Ojo');
+    var input = document.getElementById('Input');
+    ojo.addEventListener("click", function() {
+        if (input.type === "password") {
+            input.type = "text";
+            ojo.style.opacity = 1;
+        } else {
+            input.type = "password";
+            ojo.style.opacity = 0.6;
+        }
+    })
+</script>
+
+<body>
+
+</body>
+
+</html>
