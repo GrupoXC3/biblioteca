@@ -4,54 +4,67 @@
 
 <head>
     <meta charset="utf_8">
-    <title>MY Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script>
-        function mostrarcontrasena() {
-            var x = document.getElementById("pass");
-            if (x.type == "password") {
-                x.type = "text";
-            } else {
-                x.type == "password";
-            }
-        }
-    </script>
-    <style>
-        div {
-            background-color: #A49393;
-        }
-    </style>
+    <title>Loginusuario</title>
+    <link rel="stylesheet" type="text/css" href="css/registrousuario.css">
 
 </head>
+<section class="form">
 
-<body>
+    <body>
+        <form action="" method="POST" id="form"></form>
 
-    <div class="container">
-
-        <div class="card col-md-4 mx-auto mt-4">
-
+        <div class="from">
             <div class="card-title">
-                <h4>Inicio de sesion</h4>
-                <img src="pngwing.com.png" width="120" height="120" alt="120" />
+                <h1>Inicio de sesion</h1>
+                <section class="form-logo">
+                    <img src="pngwing.com.png" width="100" height="100" alt="120" />
+
+                </section>
             </div>
-            <div class="from-cotrol">
+            <div class="grupo">
+                <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email" required>
+            </div>
 
 
-                <form action="/data.php" method="GET">
+            <div class="grupo">
+                <input type="password" id="Input" placeholder="Ingrese su contraseña" required>
 
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Ingrese su correo</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Ingrese su contrasena</label>
-                        <input type="password" class="form-control" id="pass" id="exampleCheck1">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Confirmar</button>
-                    <button type="button" class="btn btn-primary" onclick="mostrarcontrasena()">Mostrar</button>
+                <img src="Show.png" width="20" height="20" alt="2" class="icon" id="Ojo">
 
             </div>
+
+            <script>
+                var ojo = document.getElementById('Ojo');
+                var input = document.getElementById('Input');
+                ojo.addEventListener("click", function() {
+                    if (input.type === "password") {
+                        input.type = "text";
+                        ojo.style.opacity = 1;
+                    } else {
+                        input.type = "password";
+                        ojo.style.opacity = 0.6;
+                    }
+                })
+            </script>
+
+            <br>
+            <h2>Nunca compartiremos su correo electrónico con nadie.</h2>
+            </br>
+
+            <br>
+            <button type="submit">Confirmar</button>
+            </br>
+
+            <br>
+
+            <h3> <a href="registrousuario.html">Registro</a>
+                <a href="recuperarcontrasena.html">|¿Has olvidado tu contraseña?</a>
+            </h3>
+
+            </br>
         </div>
-</body>
+        </div>
+    </body>
+</section>
+
+</html>
