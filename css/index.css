@@ -12,6 +12,7 @@ h1 {
     font-size: 50px;
 }
 .destacados {
+    text-align: center;
     border-top: 50px auto;
     height: 500px;
     background-color: #E8B4B8;
